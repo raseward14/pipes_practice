@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TemperaturePipe } from './temperature.pipe';
+import { SortPipe } from './sort.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [CommonModule, TemperaturePipe],
+  imports: [CommonModule, TemperaturePipe, SortPipe],
 })
 export class AppComponent {
   currentDate = new Date();
